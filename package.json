@@ -1,0 +1,28 @@
+{
+  "name": "namma-bengaluru-guide",
+  "version": "1.0.0",
+  "description": "A Bengaluru-specific AI assistant that answers like a long-time local resident",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server ."
+  },
+  "keywords": [
+    "bengaluru",
+    "local-guide", 
+    "ai-assistant",
+    "traffic",
+    "cultural-ai",
+    "kiro",
+    "ai-for-bharat"
+  ],
+  "author": "Rakesh Roshan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rakesh9100/namma-bengaluru-guide.git"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

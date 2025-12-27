@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Namma Bengaluru</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Namma Bengaluru 🛵</h1>
+        <p class="subtitle">Ask like a local. Get a real answer.</p>
+        <div class="input-section">
+            <textarea id="input" 
+                placeholder="Should I leave for Whitefield at 6 PM?&#10;Is it safe to eat pani puri at 10 PM?&#10;How long will it take to reach Koramangala from Indiranagar right now?"></textarea>
+        </div>
+        <div class="button-container">
+            <button id="askButton" onclick="ask()">Ask a Local</button>
+        </div>
+        <div class="output-section">
+            <pre id="output">Ask me anything about navigating Bengaluru life - traffic, food, timing, or local decisions!</pre>
+        </div>
+        <div class="examples">
+            <h3>Try asking about:</h3>
+            <div class="example-item" onclick="setExample('Should I take the metro or cab to reach MG Road from Whitefield at 8 AM?')">
+                🚇 Transportation choices during peak hours
+            </div>
+            <div class="example-item" onclick="setExample('Is it worth going to Toit on a Friday evening?')">
+                🍺 Weekend plans and timing
+            </div>
+            <div class="example-item" onclick="setExample('Should I order food delivery during heavy rain?')">
+                🌧️ Weather-based decisions
+            </div>
+            <div class="example-item" onclick="setExample('Is 30 minutes enough to reach the airport from Koramangala?')">
+                ✈️ Airport timing and routes
+            </div>
+        </div>
+        <div class="config-section">
+            <h3>🔧 AI Configuration</h3>
+            <div class="config-options">
+                <div class="config-item">
+                    <strong>Current:</strong> <span id="currentConfig">Sample Responses (No API needed)</span>
+                </div>
+                <details>
+                    <summary>Free Options to Get Real AI Responses</summary>
+                    <div class="config-details">
+                        <p><strong>Option 1: Kiro IDE Built-in AI</strong> (Recommended)</p>
+                        <p>✅ Already works if you're using Kiro IDE - no setup needed!</p>
+                        <p><strong>Option 2: Hugging Face (Free)</strong></p>
+                        <p>1. Sign up at <a href="https://huggingface.co" target="_blank">huggingface.co</a></p>
+                        <p>2. Get your free API token</p>
+                        <p>3. Update CONFIG.huggingFaceToken in app.js</p>
+                        <p><strong>Option 3: OpenAI ($5 free credit)</strong></p>
+                        <p>1. Sign up at <a href="https://platform.openai.com" target="_blank">platform.openai.com</a></p>
+                        <p>2. Get $5 free credit (enough for ~1000 questions)</p>
+                        <p>3. Update CONFIG.openaiKey in app.js</p>
+                        <p><strong>Option 4: Local AI (Ollama)</strong></p>
+                        <p>1. Install <a href="https://ollama.ai" target="_blank">Ollama</a> locally</p>
+                        <p>2. Run: <code>ollama run llama2</code></p>
+                        <p>3. Update CONFIG.ollamaEndpoint in app.js</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

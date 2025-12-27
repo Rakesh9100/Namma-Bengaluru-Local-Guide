@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Environment variables (but keep .kiro/ for challenge)
+.env
+.env.local
+
+# IDE files
+.vscode/settings.json
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Note: .kiro/ directory is intentionally NOT ignored as it's required for the AI for Bharat challenge submission
